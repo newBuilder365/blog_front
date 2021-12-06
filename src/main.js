@@ -7,6 +7,7 @@ import './assets/css/index.css'
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient }) {
+  console.log('api', process.env.GRIDSOME_API_URL)
   Vue.mixin({
     data(){
       return {
